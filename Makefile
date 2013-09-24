@@ -1,8 +1,7 @@
 all: ssss-split ssss-combine ssss.1 ssss.1.html
 
 ssss-split: ssss.c
-	$(CC) -W -Wall -O2 -lgmp -o ssss-split ssss.c
-	strip ssss-split
+	$(CC) $(CFLAGS) -lgmp -o ssss-split ssss.c
 
 ssss-combine: ssss-split
 	ln -f ssss-split ssss-combine
