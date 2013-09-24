@@ -1,3 +1,5 @@
+CFLAGS ?= -W -Wall -O2
+
 all: ssss-split ssss-combine ssss.1 ssss.1.html
 
 ssss-split: ssss.c
